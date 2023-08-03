@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+@import 'variables';
+
+@include mat.core();
+
+$dark-primary-text: rgba(black, 0.87);
+$light-primary-text: white;
+
+$palette-primary-color: mat.$light-blue-palette;
+$palette-secondary-color: mat.$teal-palette;
+
+$palette-primary: mat.define-palette($palette-primary-color, 900);
+$palette-secondary: mat.define-palette($palette-secondary-color, 50);
+
+$theme: mat.define-light-theme((
+  color: (
+    primary: $palette-primary,
+    accent: $palette-secondary
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+@include mat.all-component-themes($theme);

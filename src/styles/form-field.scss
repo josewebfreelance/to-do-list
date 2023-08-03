@@ -1,0 +1,17 @@
+@import "/src/variables";
+
+.mat-mdc-form-field {
+  width: 100%;
+
+  .mat-mdc-text-field-wrapper {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 100px;
+
+    .mdc-notched-outline__leading,
+    .mdc-notched-outline__trailing {
+      border: none;
+      border-radius: 100px;
+    }
+  }
+}

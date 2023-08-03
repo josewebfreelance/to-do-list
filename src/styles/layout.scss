@@ -1,0 +1,49 @@
+.layout {
+  background: linear-gradient(to bottom right, #E3F2FD, #00BCD4);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 2rem 1rem 1rem 1rem;
+
+  .content-todo-list {
+    border-radius: 16px;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  @media screen and (min-width: 1400px) {
+    .content-todo-list {
+      width: 40vw;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .content-todo-list {
+      width: 30vw;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .content-todo-list {
+      width: 70vw;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .content-todo-list {
+      width: 80vw;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .content-todo-list {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .content-todo-list {
+      width: 100%;
+    }
+  }
+}

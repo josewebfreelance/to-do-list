@@ -1,0 +1,6 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$primary-color: map-get(mat.$light-blue-palette, 900);
+$secondary-color: map-get(mat.$teal-palette, 50);

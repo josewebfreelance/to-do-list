@@ -1,0 +1,73 @@
+@use '@angular/material' as mat;
+@include mat.core();
+@import '../variables';
+
+.list-subtitle {
+  color: grey;
+  display: flex;
+  align-items: center;
+
+  .mat-icon {
+    font-size: 12px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.mat-mdc-list {
+  min-height: 5vh;
+  max-height: calc(100vh - (3rem + 2rem + 16px + 92px + 77.5px + 1rem));
+  overflow-y: auto;
+}
+
+.mat-mdc-card {
+  .mat-mdc-card-header {
+    border-bottom: 1px solid #e2e2e2;
+
+    h1 {
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    h1, h3 {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.actions {
+  position: absolute;
+  right: 32px;
+  background-color: white;
+  width: auto;
+  border-radius: 100px;
+  top: -20px;
+  padding: 3px 16px;
+
+  .mat-mdc-icon-button {
+    svg {
+      width: 20px !important;
+      height: 20px !important;
+      color: grey;
+    }
+
+    &:first-child {
+      &:hover {
+
+        svg {
+          color: #D32F2F;
+        }
+      }
+    }
+
+    &:last-child {
+      &:hover {
+
+        svg {
+          color: #43A047;
+        }
+      }
+    }
+  }
+}
+
